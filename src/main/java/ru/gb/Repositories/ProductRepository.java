@@ -15,4 +15,8 @@ public interface ProductRepository extends CrudRepository<Product, Integer> {
 
     @Query(value = "SELECT *  FROM homework7.products AS p WHERE p.price > :min AND p.price < :max", nativeQuery = true)
     Iterable<Product> findBetweenMinMax(@Param("min") int min, @Param("max") int max);
+
+    // var2
+    Iterable<Product> findByPriceBetween(int min, int max);
+
 }

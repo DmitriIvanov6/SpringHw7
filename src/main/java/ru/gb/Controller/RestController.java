@@ -74,4 +74,20 @@ public class RestController {
         repository.findBetweenMinMax(min, max).forEach(products::add);
         return products;
     }
+
+    //Второй вариант
+
+    @RequestMapping(value = "/find/between2/{min}&{max}", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Product> findBetween2(@PathVariable int min, @PathVariable int max) {
+        int temp;
+        if (min > max) {
+            temp = min;
+            min = max;
+            max = temp;
+        }
+        List<Product> products = new ArrayList<>();
+        repository.findByPriceBetween(min, max).forEach(products::add);
+        return products;
+    }
 }

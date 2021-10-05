@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/hibernatedb?currentSchema=homework6
+    url: jdbc:postgresql://localhost:5432/hibernatedb?currentSchema=homework7
     username: postgres
     password: Killthem86
   jpa:

@@ -1,0 +1,24 @@
+CREATE SCHEMA homework7
+CREATE TABLE homework7.products (id serial, title varchar(100), price int, PRIMARY KEY (id));
+
+INSERT INTO homework7.products (title, price) VALUES ('product1', 50);
+INSERT INTO homework7.products (title, price)  VALUES ('product2', 20);
+INSERT INTO homework7.products (title, price)  VALUES ('product3', 50);
+INSERT INTO homework7.products (title, price)  VALUES ('product4', 150);
+INSERT INTO homework7.products (title, price)  VALUES ('product5', 151);
+INSERT INTO homework7.products (title, price)  VALUES ('product6', 152);
+INSERT INTO homework7.products (title, price)  VALUES ('product7', 1503);
+INSERT INTO homework7.products (title, price)  VALUES ('product8', 154);
+INSERT INTO homework7.products (title, price)  VALUES ('product9', 155);
+INSERT INTO homework7.products (title, price)  VALUES ('product10', 156);
+INSERT INTO homework7.products (title, price)  VALUES ('product11', 160);
+INSERT INTO homework7.products (title, price)  VALUES ('product12', 15011);
+INSERT INTO homework7.products (title, price)  VALUES ('product13', 15000);
+INSERT INTO homework7.products (title, price)  VALUES ('product14', 15012);
+INSERT INTO homework7.products (title, price)  VALUES ('product15', 15013);
+INSERT INTO homework7.products (title, price)  VALUES ('product16', 15014);
+INSERT INTO homework7.products (title, price)  VALUES ('product17', 15015);
+INSERT INTO homework7.products (title, price)  VALUES ('product18', 1502);
+INSERT INTO homework7.products (title, price)  VALUES ('product19', 1503);
+INSERT INTO homework7.products (title, price)  VALUES ('product20', 1504);
+

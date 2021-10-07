@@ -2,10 +2,11 @@ package ru.gb.Repositories;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import ru.gb.Domain.Product;
 
-public interface ProductRepository extends CrudRepository<Product, Integer> {
+public interface ProductRepository extends CrudRepository<Product, Integer>, PagingAndSortingRepository<Product, Integer> {
 
     @Query(value = "SELECT *  FROM homework7.products WHERE (price) > (SELECT MIN (price) FROM homework7.products)", nativeQuery = true)
     Iterable<Product> findMoreMinPrice();

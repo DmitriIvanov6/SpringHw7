@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/hibernatedb?currentSchema=homework6
+    url: jdbc:postgresql://localhost:5432/hibernatedb?currentSchema=homework7
     username: postgres
     password: Killthem86
   jpa:
@@ -8,3 +8,13 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: none
+  thymeleaf:
+    check-template-location: true
+    servlet:
+      content-type: text/html
+    enabled: true
+    encoding: UTF-8
+    mode: HTML5
+    suffix: .html
+    prefix: classpath:/templates/
+
